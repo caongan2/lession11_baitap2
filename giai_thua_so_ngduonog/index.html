@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="number"></p>
+<script>
+let n = +prompt("Nhập vào n")
+let result = factorialize(n)
+document.getElementById("number").innerHTML = n + "! = " + result
+function factorialize(n) {
+    let result = n
+    if (n === 0 || n === 1) {
+        result = 1
+    }
+    while (n > 1) {
+        n--
+        result *= n
+    }
+    return result
+}
+</script>
+</body>
+</html>
