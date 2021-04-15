@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let money = +prompt("Nợ ngân hàng bao tiền?")
+let interest = +prompt("Lãi suất bao nhiêu?")
+let month = +prompt("Định vay trong bao lâu?")
+for (i = 0; i < month; i++) {
+    money = money*(1+interest)
+}
+alert("Số tiền phải trả là: " + money )
+
+</script>
+</body>
+</html>
